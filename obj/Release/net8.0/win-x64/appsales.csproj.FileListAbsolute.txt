@@ -1,0 +1,8 @@
+C:\Users\SAYURI\source\repos\appsales\appsales\obj\Release\net8.0\win-x64\appsales.csproj.AssemblyReference.cache
+C:\Users\SAYURI\source\repos\appsales\appsales\obj\Release\net8.0\win-x64\appsales.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SAYURI\source\repos\appsales\appsales\obj\Release\net8.0\win-x64\appsales.AssemblyInfoInputs.cache
+C:\Users\SAYURI\source\repos\appsales\appsales\obj\Release\net8.0\win-x64\appsales.AssemblyInfo.cs
+C:\Users\SAYURI\source\repos\appsales\appsales\obj\Release\net8.0\win-x64\appsales.csproj.CoreCompileInputs.cache
+C:\Users\SAYURI\source\repos\appsales\appsales\obj\Release\net8.0\win-x64\appsales.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\SAYURI\source\repos\appsales\appsales\obj\Release\net8.0\win-x64\appsales.RazorAssemblyInfo.cache
+C:\Users\SAYURI\source\repos\appsales\appsales\obj\Release\net8.0\win-x64\appsales.RazorAssemblyInfo.cs
