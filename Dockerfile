@@ -1,7 +1,8 @@
-# Usa la imagen base de ASP.NET Runtime
+# Imagen base de ASP.NET Runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
-EXPOSE 80
+# Render necesita exponer el puerto dinámico (usaremos 8080 por defecto)
+EXPOSE 8080
 
 # Imagen para build
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
@@ -18,8 +19,9 @@ COPY . .
 RUN dotnet publish "appsales.csproj" -c Release -o /app/publish
 
 # Imagen final
-FROM base AS final
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 COPY --from=build /app/publish .
 
+# Render usará este comando para ejecutar tu API
 ENTRYPOINT ["dotnet", "appsales.dll"]
