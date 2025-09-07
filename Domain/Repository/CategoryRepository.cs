@@ -40,5 +40,24 @@ namespace appsales.Domain.Repository
                 return connection.QueryFirst<OutputResponse>(query, param);
             }
         }
+
+        public OutputResponse updateCategoryAsync(UpdateCategoryRequest request)
+        {
+            var param = new
+            {
+                p_empresa_id = request.codempresa,
+                p_categoria_id= request.id,
+                p_nombre = request.nombre,
+                p_estado = request.estado,
+                p_descripcion = request.descripcion
+            };
+
+            var query = "SELECT * FROM actualizar_categoria_empresa(@p_empresa_id,@p_categoria_id, @p_nombre,@p_estado, @p_descripcion);";
+
+            using (var connection = _dbConnection.GetConnection())  // Ahora se usa correctamente
+            {
+                return connection.QueryFirst<OutputResponse>(query, param);
+            }
+        }
     }
     }

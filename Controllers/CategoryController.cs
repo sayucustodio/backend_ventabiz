@@ -32,5 +32,15 @@ public class CategoryController : ControllerBase
 
         return Ok(response);
     }
+    [HttpPost("update")]
+    public async Task<ActionResult<OutputResponse>> updateCategory([FromBody] UpdateCategoryRequest request)
+    {
+        var response = await Task.FromResult(categoryRepository.updateCategoryAsync(request));
+
+        if (response == null)
+            return Unauthorized("Credenciales inválidas");
+
+        return Ok(response);
+    }
 }
 

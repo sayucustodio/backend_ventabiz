@@ -10,6 +10,7 @@ namespace appsales.Response
         //public string tipo_documento { get; set; }
 
         public string descripcion { get; set; }
+        public bool estado { get; set; }
         public int  cantidad_productos { get; set; }
        
     }

@@ -7,7 +7,8 @@ namespace appsales.Domain.Repository
     {
         IEnumerable<CategoryResponse> getCategoriasEmpresaAsync(int codempresa);
         OutputResponse createCategoryAsync(CreateCategoryRequest request);
-        
+        OutputResponse updateCategoryAsync(UpdateCategoryRequest request);
+
 
     }
 }
