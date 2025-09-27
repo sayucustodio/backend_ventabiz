@@ -174,5 +174,31 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "appsales.Controllers.ProductController",
+    "Method": "createProduct",
+    "RelativePath": "api/Product/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "appsales.Request.CreateProductRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "appsales.Response.OutputResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]
